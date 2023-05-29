@@ -3,7 +3,7 @@
 namespace DarkCalendar\LunarDate;
 
 use DarkCalendar\SolarDate\SolarDateService;
-use Facades\Facade;
+use DevNull\Facades\Facade;
 
 /**
  * @method static SolarDateService solarDate()

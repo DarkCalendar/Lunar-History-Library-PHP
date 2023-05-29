@@ -11,8 +11,8 @@
   ],
   "require": {
     "php" : ">=8.0",
-    "devnull-ir/facades": "v1",
-    "dark-calendar/solar-history-library-php": "^1.0",
+    "devnull-ir/facades": "v1.1",
+    "dark-calendar/solar-history-library-php": "^v1.1",
     "ext-mbstring": "*"
   },
   "require-dev": {
