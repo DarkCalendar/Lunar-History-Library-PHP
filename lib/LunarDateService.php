@@ -339,5 +339,15 @@ class LunarDateService
         return ($float < -0.0000001) ? ceil($float - 0.0000001) : floor($float + 0.0000001);
     }
 
-
+    /**
+     * @param string $name
+     * @param array $arguments
+     * @return mixed
+     */
+    public static function __callStatic(string $name, array $arguments)
+    {
+        $nameSpace = new LunarDateService();
+        // TODO: Implement __callStatic() method.
+        return ($nameSpace)->$name(...$arguments);
+    }
 }
