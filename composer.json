@@ -1,6 +1,6 @@
 {
   "name": "dark-calendar/lunar-history-library-php",
-  "description": "description",
+  "description": "Lunar date library for php",
   "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
