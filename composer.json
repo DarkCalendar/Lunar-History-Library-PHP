@@ -12,7 +12,7 @@
   "require": {
     "php": ">=8.0",
     "devnull-ir/facades": "v1.1.1",
-    "dark-calendar/solar-history-library-php": "1.6.x-dev",
+    "dark-calendar/solar-history-library-php": "dev-master",
     "ext-mbstring": "*"
   },
   "require-dev": {
@@ -33,8 +33,7 @@
   },
   "extra": {
     "branch-alias": {
-      "v1.6": "1.6.x-dev",
-      "dev-main": "1.x-dev"
+      "dev-master": "1.x-dev"
     }
   }
 }
