@@ -1,7 +1,7 @@
 <?php
 
 use DarkCalendar\LunarDate\LunarDate;
-
+// Faster Version 9
 if (!function_exists('gregorian')) {
     /**
      * @param string $format
