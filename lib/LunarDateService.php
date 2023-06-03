@@ -213,7 +213,8 @@ class LunarDateService
      */
     public function solar_to_lunar(string|int $s_y, string|int $s_m, string|int $s_d, string $mod = ''): array|string
     {
-        return $this->gregorian_to_lunar(...[...$this->solarDate()->solar_to_gregorian($s_y, $s_m, $s_d), ...[$mod]]);
+        $convertToGre = $this->solarDate()->solar_to_gregorian($s_y, $s_m, $s_d);
+        return $this->gregorian_to_lunar($convertToGre[0], $convertToGre[1], $convertToGre[2], $mod);
     }
 
     /**
