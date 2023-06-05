@@ -2,6 +2,7 @@
 
 namespace DarkCalendar\LunarDate;
 
+use DarkCalendar\SolarDate\SolarDate;
 use DarkCalendar\SolarDate\SolarDateService;
 
 class LunarDateService
