@@ -29,7 +29,7 @@ class LunarDateService
         $date = explode('_', date('H_i_j_n_O_P_s_w_Y', $ts));
         list($l_y, $l_m, $l_d) = $this->gregorian_to_lunar($date[8], $date[3], $date[2]);
         $format_extract = mb_str_split($format);
-        $m_days = [30, 29, 30, 29, 30, 29, 30, 29, 30, 29, 30, 29];
+        $m_days = [0, 30, 29, 30, 29, 30, 29, 30, 29, 30, 29, 30, 29];
         $doy = 0;
         foreach (range(0, $l_m) as $item) {
             $doy += $m_days[$item];
