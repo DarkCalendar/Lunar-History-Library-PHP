@@ -3,7 +3,7 @@
 namespace DarkCalendar\LunarDate;
 
 use DarkCalendar\SolarDate\SolarDateService;
-use DevNull\Facades\Facade;
+use \Illuminate\Support\Facades\Facade;
 
 /**
  * @method static SolarDateService solarDate()
@@ -19,7 +19,7 @@ use DevNull\Facades\Facade;
  */
 class LunarDate extends Facade
 {
-    public static function setNameSpace(): string
+    public static function getFacadeAccessor(): string
     {
         return LunarDateService::class;
     }
